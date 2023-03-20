@@ -12,6 +12,31 @@ en:
       spree/taxon:
         other: Taxons
   spree:
+    admin:
+      tab:
+        checkout: Refunds and Returns
+        configuration: Configuration
+        display_order: Display Order
+        option_types: Option Types
+        orders: Orders
+        overview: Overview
+        payments: Payments
+        products: Products
+        promotion_categories: Promotion Categories
+        promotions: Promotions
+        properties: Property Types
+        rma: RMA
+        settings: Settings
+        shipping: Shipping
+        stock: Stock
+        stock_items: Store Stock
+        stores: Stores
+        taxes: Taxes
+        taxonomies: Taxonomies
+        taxons: Taxons
+        users: Users
+        zones: Zones
+
     taxon_placeholder: Add a Taxon
     new_product: New Product
     product_details: Product Details
