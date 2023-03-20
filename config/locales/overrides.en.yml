@@ -1,0 +1,22 @@
+---
+en:
+  activerecord:
+    attributes:
+      spree/product:
+        name: Name
+        price: Master Price
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title: Meta Title
+    models:
+      spree/taxon:
+        other: Taxons
+  spree:
+    taxon_placeholder: Add a Taxon
+    new_product: New Product
+    product_details: Product Details
+
+
+
+
+
