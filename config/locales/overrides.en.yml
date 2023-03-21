@@ -2,6 +2,30 @@
 en:
   activerecord:
     attributes:
+      spree/payment:
+        amount: Amount  
+        created_at: Date/Time 
+        number: Identifier 
+        response_code: Transaction ID 
+        state: State 
+      spree/address:
+        city: City 
+        name: Name 
+        phone: Phone 
+      spree/order:
+        completed_at: Completed at 
+        email: Customer Email 
+        number: Number 
+        payment_state: Payment State  
+        state: State 
+        total: Total 
+
+      spree/line_item:
+        description: Item Description 
+        name: Name 
+        price: Price 
+        quantity: Quantity   
+        total: Total price 
       spree/product:
         name: Name
         price: Master Price
@@ -9,12 +33,22 @@ en:
         meta_keywords: Meta Keywords
         meta_title: Meta Title
     models:
+      spree/payment_method:
+        one: Payment Method 
+      spree/state:
+        one: State  
       spree/shipment:
-        other: Shipments
+        other: Shipments 
       spree/product:
         other: Products
       spree/taxon:
         other: Taxons
+      spree/order:
+        other: Orders  
+      spree/payment:
+        other: Payments 
+      spree/country:
+        one: Country   
   spree:
     admin:
       tab:
@@ -22,7 +56,7 @@ en:
         configuration: Configuration
         display_order: Display Order
         option_types: Option Types
-        orders: Orders
+        orders: Orders  
         overview: Overview
         payments: Payments
         products: Products
@@ -44,6 +78,70 @@ en:
     taxon_placeholder: Add a Taxon
     new_product: New Product
     product_details: Product Details
+    date_range: Date Range  
+    new_order: New Order  
+    name_contains: Name Contains   
+    email: Email  
+    filter: Filter  
+    filter_results: Filter Results 
+    start: Start 
+    stop: Stop 
+    order_state:
+      canceled: Canceled 
+      complete: Complete 
+    payment_states:
+      balance_due: Balance due 
+      completed: Completed
+      paid: Paid  
+    cart: Cart 
+    customer: Customer 
+    confirm: Confirm 
+    order_information: Order Information 
+    status: Status 
+    empty_cart: Empty Cart 
+    order_state:
+      canceled: Canceled
+      cart: Cart  
+      complete: Complete
+      confirm: Confirm 
+      delivery: Delivery
+      payment: Payment
+    add_line_item: Add Item 
+    variant_placeholder: Choose a Variant 
+    customer_search: Customer Search 
+    choose_a_customer: Choose a Customer 
+    account: Account 
+    guest_checkout: Guest Checkout 
+    say_yes: "Yes  "
+    say_no: "No "
+    billing_address: Billing Address  
+    actions:
+      add: Add
+      cancel: Cancel
+      continue: Continue
+      create: Create
+      delete: Delete
+      destroy: Destroy
+      edit: Edit
+      list: List
+      listing: Listing
+      new: New
+      receive: Receive
+      refund: Refund
+      remove: Remove
+      save: Save
+      send_email: Send Email
+      update: Update  
+    your_order_is_empty_add_product: Your   order is empty. Please add products first.
+    order_total: Order Total 
+    user: User 
+    new_payment: New Payment  
+    customer_details: Customer Details  
+    confirm_order: Confirm Order  
+    complete_order: Complete Order  
+    no_payment_found: No payment found   
+    order_completed: Order completed 
+
 
 
 
