@@ -61,7 +61,7 @@
           <div class="field"  style="display: none;">
             <span data-hook="use_billing">
               <label>
-                <%= check_box_tag 'order[use_billing]', '1', (@order.ship_address.new_record? && @order.bill_address == @order.ship_address) %>
+                <%= check_box_tag 'order[use_billing]', '1', (@order.ship_address.new_record? && @order.bill_address == @order.ship_address), checked: true %>
                 <%= t('spree.use_billing_address') %>
               </label>
             </span>

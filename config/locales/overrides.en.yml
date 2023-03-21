@@ -9,6 +9,8 @@ en:
         meta_keywords: Meta Keywords
         meta_title: Meta Title
     models:
+      spree/shipment:
+        other: Shipments
       spree/product:
         other: Products
       spree/taxon:
