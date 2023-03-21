@@ -1,15 +1,69 @@
 <% Spree::Backend::Config.menu_items.sort_by { |item| item.position || Float::INFINITY }.each do |menu_item| %>
   <% if instance_exec(&menu_item.condition) %>
-    <%=
-      tab(
-        *menu_item.sections,
-        icon: menu_item.icon,
-        label: menu_item.label,
-        url: menu_item.url.is_a?(Symbol) ? spree.public_send(menu_item.url) : menu_item.url,
-        match_path: menu_item.match_path,
-      ) do
-    %>
-      <%- render partial: menu_item.partial if menu_item.partial %>
-    <%- end %>
+    <% if menu_item.icon == "shopping-cart" %>
+      <%=
+        tab(
+          *menu_item.sections,
+          icon: menu_item.icon,
+          label: "orders",
+          url: menu_item.url.is_a?(Symbol) ? spree.public_send(menu_item.url) : menu_item.url,
+          match_path: menu_item.match_path,
+        ) do
+      %>
+        <%- render partial: menu_item.partial if menu_item.partial %>
+      <% end %>
+    <% elsif menu_item.icon == "th-large" %>
+      <%=
+        tab(
+          *menu_item.sections,
+          icon: menu_item.icon,
+          label: "products",
+          url: menu_item.url.is_a?(Symbol) ? spree.public_send(menu_item.url) : menu_item.url,
+          match_path: menu_item.match_path,
+        ) do
+      %>
+        <%- render partial: menu_item.partial if menu_item.partial %>
+      <% end %>
+    <% elsif menu_item.icon == "bullhorn" %>
+      <% next %>
+    <% elsif menu_item.icon == "cubes" %>
+      <% next %>
+    <% elsif menu_item.icon == "user" %>
+      <%=
+        tab(
+          *menu_item.sections,
+          icon: menu_item.icon,
+          label: "users",
+          url: menu_item.url.is_a?(Symbol) ? spree.public_send(menu_item.url) : menu_item.url,
+          match_path: menu_item.match_path,
+        ) do
+      %>
+        <%- render partial: menu_item.partial if menu_item.partial %>
+      <% end %>
+    <% elsif menu_item.icon == "wrench" %>
+      <%=
+        tab(
+          *menu_item.sections,
+          icon: menu_item.icon,
+          label: "settings",
+          url: menu_item.url.is_a?(Symbol) ? spree.public_send(menu_item.url) : menu_item.url,
+          match_path: menu_item.match_path,
+        ) do
+      %>
+        <%- render partial: menu_item.partial if menu_item.partial %>
+      <% end %>
+    <% else %>
+      <%=
+        tab(
+          *menu_item.sections,
+          icon: menu_item.icon,
+          label: menu_item.label,
+          url: menu_item.url.is_a?(Symbol) ? spree.public_send(menu_item.url) : menu_item.url,
+          match_path: menu_item.match_path,
+        ) do
+      %>
+        <%- render partial: menu_item.partial if menu_item.partial %>
+      <% end %>
+    <% end %>
   <% end %>
 <% end %>
