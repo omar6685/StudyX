@@ -2,6 +2,16 @@
 en:
   activerecord:
     attributes:
+      spree/store:
+        available_locales: Locales Available in the Storefront111
+        bcc_email: BCC Email111
+        default_currency: Default Currency111
+        mail_from_address: Mail From Address111
+        meta_description: Meta Description111
+        meta_keywords: Meta Keywords111
+        name: Site Name111
+        seo_title: Seo Title111
+        url: Site URL111
       spree/user:
         email: Email111
         lifetime_value: Total spent111
@@ -55,6 +65,8 @@ en:
         meta_keywords: Meta Keywords111
         meta_title: Meta Title111
     models:
+      spree/store:
+        other: Stores111
       spree/address:
         other: Addresses111
       spree/user:
