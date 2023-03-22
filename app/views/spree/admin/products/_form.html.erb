@@ -17,7 +17,7 @@
             <%= f.text_field :slug, class: 'fullwidth title', required: !f.object.new_record?, disabled: f.object.new_record? %>
             <%= f.error_message_on :slug %>
           <% end %>
-        </div> -->
+        </div> 
 
         <div data-hook="admin_product_form_description">
           <%= f.field_container :description do %>
@@ -25,7 +25,7 @@
             <%= f.cktext_area :description, {rows: "#{unless @product.has_variants? then '22' else '15' end}", class: 'fullwidth'} %>
             <%= f.error_message_on :description %>
           <% end %>
-        </div>
+        </div>-->
       </div>
 
       <div class="mt-4">

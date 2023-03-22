@@ -2,6 +2,22 @@
 en:
   activerecord:
     attributes:
+      spree/taxonomy:
+        name: Name111
+      spree/taxon:
+        description: Description111
+        icon: Icon111
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords111
+        meta_title: Meta Title111
+        name: Name111
+        permalink: Permalink111
+        position: Position
+      spree/property:
+        name: Name111
+        presentation: Presentation111
+      spree/product_property:
+        value: Value111
       spree/payment:
         amount: Amount  
         created_at: Date/Time 
@@ -27,12 +43,19 @@ en:
         quantity: Quantity   
         total: Total price 
       spree/product:
-        name: Name
-        price: Master Price
-        meta_description: Meta Description
-        meta_keywords: Meta Keywords
-        meta_title: Meta Title
+        name: Name111
+        price: Master Price111
+        meta_description: Meta Description111
+        meta_keywords: Meta Keywords111
+        meta_title: Meta Title111
     models:
+      spree/taxonomy:
+        other: Taxonomies111
+      spree/property:
+        one: Property Type111
+      spree/product_property:
+        one: Product Property111
+        other: Product Properties111
       spree/payment_method:
         one: Payment Method 
       spree/state:
@@ -40,9 +63,9 @@ en:
       spree/shipment:
         other: Shipments 
       spree/product:
-        other: Products
+        other: Products111
       spree/taxon:
-        other: Taxons
+        other: Taxons111
       spree/order:
         other: Orders  
       spree/payment:
@@ -51,6 +74,8 @@ en:
         one: Country   
   spree:
     admin:
+      taxons:
+        display_order: Display Order111
       tab:
         checkout: Refunds and Returns
         configuration: Configuration
@@ -76,8 +101,8 @@ en:
         zones: Zones
 
     taxon_placeholder: Add a Taxon
-    new_product: New Product
-    product_details: Product Details
+    new_product: New Product111
+    product_details: Product Details111
     date_range: Date Range  
     new_order: New Order  
     name_contains: Name Contains   
@@ -117,9 +142,9 @@ en:
     billing_address: Billing Address  
     actions:
       add: Add
-      cancel: Cancel
+      cancel: Cancel111
       continue: Continue
-      create: Create
+      create: Create111
       delete: Delete
       destroy: Destroy
       edit: Edit
@@ -131,7 +156,7 @@ en:
       remove: Remove
       save: Save
       send_email: Send Email
-      update: Update  
+      update: Update111  
     your_order_is_empty_add_product: Your   order is empty. Please add products first.
     order_total: Order Total 
     user: User 
@@ -141,6 +166,17 @@ en:
     complete_order: Complete Order  
     no_payment_found: No payment found   
     order_completed: Order completed 
+    show_deleted: Show Deleted111
+    search: Search111
+    add_product_properties: Add Product Properties111
+    name: Name111
+    new_property: New Property Type111
+    new_taxonomy: New Taxonomy111
+    taxon_edit: Edit Taxon111
+    back_to_taxonomies_list: Back To Taxonomies List111
+    choose_a_taxon_to_sort_products_for: Choose a taxon to sort products for111
+    find_a_taxon: Find a Taxon111
+    no_results: No results111
 
 
 
