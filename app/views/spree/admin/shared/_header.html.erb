@@ -4,8 +4,8 @@
   <% if content_for?(:page_actions) %>
     <ul class="header-actions page-actions inline-menu" data-hook="toolbar">
       <%=
-        # Remove "approve" and "resend" buttons from the page actions string
-        yield(:page_actions).gsub(/<li>.*(?:approve|resend).*<\/li>/i, '').html_safe
+        # Remove "approve", "resend", and "new store" buttons from the page actions string
+        yield(:page_actions).gsub(/<li>(?!.*(?:approve|resend|Store)).*<\/li>/i, '').html_safe
       %>
     </ul>
   <% end %>
