@@ -3,37 +3,37 @@ en:
   activerecord:
     attributes:
       spree/store:
-        available_locales: Locales Available in the Storefront111
-        bcc_email: BCC Email111
-        default_currency: Default Currency111
-        mail_from_address: Mail From Address111
-        meta_description: Meta Description111
-        meta_keywords: Meta Keywords111
-        name: Site Name111
-        seo_title: Seo Title111
-        url: Site URL111
-      spree/user:
-        email: Email111
-        lifetime_value: Total spent111
-        password: Password111
-        password_confirmation: Password Confirmation111
-        spree_roles: Roles111
-      spree/taxonomy:
-        name: Name111
-      spree/taxon:
-        description: Description111
-        icon: Icon111
+        available_locales: Locales Available in the Storefront
+        bcc_email: BCC Email
+        default_currency: Default Currency
+        mail_from_address: Mail From Address
         meta_description: Meta Description
-        meta_keywords: Meta Keywords111
-        meta_title: Meta Title111
-        name: Name111
-        permalink: Permalink111
+        meta_keywords: Meta Keywords
+        name: Site Name
+        seo_title: Seo Title
+        url: Site URL
+      spree/user:
+        email: Email
+        lifetime_value: Total spent
+        password: Password
+        password_confirmation: Password Confirmation
+        spree_roles: Roles
+      spree/taxonomy:
+        name: Name
+      spree/taxon:
+        description: Description
+        icon: Icon
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title: Meta Title
+        name: Name
+        permalink: Permalink
         position: Position
       spree/property:
-        name: Name111
-        presentation: Presentation111
+        name: Name
+        presentation: Presentation
       spree/product_property:
-        value: Value111
+        value: Value
       spree/payment:
         amount: Amount  
         created_at: Date/Time 
@@ -45,44 +45,44 @@ en:
         name: Name 
         phone: Phone 
       spree/order:
-        completed_at: Completed at111 
+        completed_at: Completed at 
         email: Customer Email 
-        number: Number111 
-        payment_state: Payment State111
-        state: State111
-        total: Total111 
+        number: Number 
+        payment_state: Payment State
+        state: State
+        total: Total 
 
       spree/line_item:
-        description: Item Description111
+        description: Item Description
         name: Name 
         price: Price 
         quantity: Quantity   
         total: Total price 
       spree/product:
-        name: Name111
-        price: Master Price111
-        meta_description: Meta Description111
-        meta_keywords: Meta Keywords111
-        meta_title: Meta Title111
+        name: Name
+        price: Master Price
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title: Meta Title
     models:
       spree/store:
-        other: Stores111
+        other: Stores
       spree/address:
-        other: Addresses111
+        other: Addresses
       spree/user:
-        one: User111
+        one: User
       spree/role:
-        one: Role111
-        other: Roles111
+        one: Role
+        other: Roles
       user:
-        other: Users111
+        other: Users
       spree/taxonomy:
-        other: Taxonomies111
+        other: Taxonomies
       spree/property:
-        one: Property Type111
+        one: Property Type
       spree/product_property:
-        one: Product Property111
-        other: Product Properties111
+        one: Product Property
+        other: Product Properties
       spree/payment_method:
         one: Payment Method 
       spree/state:
@@ -90,9 +90,9 @@ en:
       spree/shipment:
         other: Shipments 
       spree/product:
-        other: Products111
+        other: Products
       spree/taxon:
-        other: Taxons111
+        other: Taxons
       spree/order:
         other: Orders  
       spree/payment:
@@ -103,19 +103,19 @@ en:
     admin:
       users:
         user_page_actions:
-          create_order: Create order for this user111
+          create_order: Create order for this user
       user:
-        account: Account111
-        addresses: Addresses111
-        items: Items111
-        items_purchased: Items Purchased111
-        order_history: Order History111
-        order_num: "Order #111"
+        account: Account
+        addresses: Addresses
+        items: Items
+        items_purchased: Items Purchased
+        order_history: Order History
+        order_num: "Order #"
         orders: Orders
         store_credit: Store Credit
         user_information: User Information
       taxons:
-        display_order: Display Order111
+        display_order: Display Order
       tab:
         checkout: Refunds and Returns
         configuration: Configuration
@@ -141,16 +141,16 @@ en:
         zones: Zones
 
     taxon_placeholder: Add a Taxon
-    new_product: New Product111
-    product_details: Product Details111
+    new_product: New Product
+    product_details: Product Details
     date_range: Date Range  
     new_order: New Order  
     name_contains: Name Contains   
-    email: Email111 
+    email: Email 
     filter: Filter  
     filter_results: Filter Results 
-    start: Start111
-    stop: Stop111
+    start: Start
+    stop: Stop
     order_state:
       canceled: Canceled 
       complete: Complete 
@@ -179,12 +179,12 @@ en:
     guest_checkout: Guest Checkout 
     say_yes: "Yes  "
     say_no: "No "
-    billing_address: Billing Address111
+    billing_address: Billing Address
     actions:
       add: Add
-      cancel: Cancel111
+      cancel: Cancel
       continue: Continue
-      create: Create111
+      create: Create
       delete: Delete
       destroy: Destroy
       edit: Edit
@@ -196,7 +196,7 @@ en:
       remove: Remove
       save: Save
       send_email: Send Email
-      update: Update111  
+      update: Update  
     your_order_is_empty_add_product: Your   order is empty. Please add products first.
     order_total: Order Total 
     user: User 
@@ -206,23 +206,23 @@ en:
     complete_order: Complete Order  
     no_payment_found: No payment found   
     order_completed: Order completed 
-    show_deleted: Show Deleted111
-    search: Search111
-    add_product_properties: Add Product Properties111
-    name: Name111
-    new_property: New Property Type111
-    new_taxonomy: New Taxonomy111
-    taxon_edit: Edit Taxon111
-    back_to_taxonomies_list: Back To Taxonomies List111
-    choose_a_taxon_to_sort_products_for: Choose a taxon to sort products for111
-    find_a_taxon: Find a Taxon111
-    no_results: No results111
-    new_user: New User111
-    member_since: Member Since111
-    num_orders: "# Orders111"
-    lifetime_stats: Lifetime Stats111
-    total_sales: Total Sales111
-    average_order_value: Average Order Value111
+    show_deleted: Show Deleted
+    search: Search
+    add_product_properties: Add Product Properties
+    name: Name
+    new_property: New Property Type
+    new_taxonomy: New Taxonomy
+    taxon_edit: Edit Taxon
+    back_to_taxonomies_list: Back To Taxonomies List
+    choose_a_taxon_to_sort_products_for: Choose a taxon to sort products for
+    find_a_taxon: Find a Taxon
+    no_results: No results
+    new_user: New User
+    member_since: Member Since
+    num_orders: "# Orders"
+    lifetime_stats: Lifetime Stats
+    total_sales: Total Sales
+    average_order_value: Average Order Value
 
 
 
