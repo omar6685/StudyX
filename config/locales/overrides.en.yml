@@ -224,6 +224,11 @@ en:
     total_sales: Total Sales
     average_order_value: Average Order Value
     new_store: Store
+    remember_me: Remember me
+    remember_me: Remember me
+    forgot_password: Forgot Password?
+    instructions_to_reset_password: Please enter your email on the form below
+    reset_password: Reset my password
 
 
 
