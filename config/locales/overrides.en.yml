@@ -2,6 +2,12 @@
 en:
   activerecord:
     attributes:
+      spree/user:
+        email: Email111
+        lifetime_value: Total spent111
+        password: Password111
+        password_confirmation: Password Confirmation111
+        spree_roles: Roles111
       spree/taxonomy:
         name: Name111
       spree/taxon:
@@ -29,15 +35,15 @@ en:
         name: Name 
         phone: Phone 
       spree/order:
-        completed_at: Completed at 
+        completed_at: Completed at111 
         email: Customer Email 
-        number: Number 
-        payment_state: Payment State  
-        state: State 
-        total: Total 
+        number: Number111 
+        payment_state: Payment State111
+        state: State111
+        total: Total111 
 
       spree/line_item:
-        description: Item Description 
+        description: Item Description111
         name: Name 
         price: Price 
         quantity: Quantity   
@@ -49,6 +55,15 @@ en:
         meta_keywords: Meta Keywords111
         meta_title: Meta Title111
     models:
+      spree/address:
+        other: Addresses111
+      spree/user:
+        one: User111
+      spree/role:
+        one: Role111
+        other: Roles111
+      user:
+        other: Users111
       spree/taxonomy:
         other: Taxonomies111
       spree/property:
@@ -74,6 +89,19 @@ en:
         one: Country   
   spree:
     admin:
+      users:
+        user_page_actions:
+          create_order: Create order for this user111
+      user:
+        account: Account111
+        addresses: Addresses111
+        items: Items111
+        items_purchased: Items Purchased111
+        order_history: Order History111
+        order_num: "Order #111"
+        orders: Orders
+        store_credit: Store Credit
+        user_information: User Information
       taxons:
         display_order: Display Order111
       tab:
@@ -106,11 +134,11 @@ en:
     date_range: Date Range  
     new_order: New Order  
     name_contains: Name Contains   
-    email: Email  
+    email: Email111 
     filter: Filter  
     filter_results: Filter Results 
-    start: Start 
-    stop: Stop 
+    start: Start111
+    stop: Stop111
     order_state:
       canceled: Canceled 
       complete: Complete 
@@ -139,7 +167,7 @@ en:
     guest_checkout: Guest Checkout 
     say_yes: "Yes  "
     say_no: "No "
-    billing_address: Billing Address  
+    billing_address: Billing Address111
     actions:
       add: Add
       cancel: Cancel111
@@ -177,6 +205,12 @@ en:
     choose_a_taxon_to_sort_products_for: Choose a taxon to sort products for111
     find_a_taxon: Find a Taxon111
     no_results: No results111
+    new_user: New User111
+    member_since: Member Since111
+    num_orders: "# Orders111"
+    lifetime_stats: Lifetime Stats111
+    total_sales: Total Sales111
+    average_order_value: Average Order Value111
 
 
 
