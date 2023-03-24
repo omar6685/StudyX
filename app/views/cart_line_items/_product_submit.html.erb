@@ -14,5 +14,19 @@
         id: 'add-to-cart-button'
       ) %>
     </div>
+    <button id="buy-now-button" class="button-secondary">
+      <%= t('spree.buy_now') %>
+    </button>
   </div>
 </div>
+<script>
+  function buyNow() {
+    var variantId = <%= @product.master.id %>;
+    var quantity = document.getElementById('quantity').value;
+    window.location.href = '/checkout?variant_id=' + variantId + '&quantity=' + quantity;
+  }
+
+  document.getElementById('buy-now-button').addEventListener('click', function() {
+    buyNow();
+  });
+</script>
