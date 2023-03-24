@@ -1,3 +1,4 @@
+<%= javascript_include_tag '//cdn.ckeditor.com/4.7.3/full-all/ckeditor.js' %>
 <div data-hook="admin_inside_taxon_form" class="row">
   <div class="col-5">
     <%= f.field_container :name do %>
@@ -40,7 +41,7 @@
   <div>
     <%= f.field_container :description do %>
       <%= f.label :description %><br>
-      <%= f.cktext_area :description, class: 'fullwidth', rows: 6 %>
+      <%= f.cktext_area :description, class: 'fullwidth'%>
     <% end %>
   </div>
 

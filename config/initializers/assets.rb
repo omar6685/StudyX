@@ -11,3 +11,4 @@ Rails.application.config.assets.version = "1.0"
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 Rails.application.config.assets.precompile += ['solidus_starter_frontend_manifest.js']
+Rails.application.config.assets.precompile += %w[ckeditor/config.js]

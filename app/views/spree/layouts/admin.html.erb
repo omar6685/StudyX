@@ -23,6 +23,13 @@
     </div>
 
     <div data-hook="admin_footer_scripts"></div>
-    
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag '//cdn.ckeditor.com/4.14.1/standard/ckeditor.js' %>
+    <script type="text/javascript">
+      $(function() {
+        CKEDITOR.replace('ckeditor');
+      });
+    </script>
+
   </body>
 </html>

@@ -5,6 +5,11 @@
   </aside>
   <section>
     <h1 class="products__taxon-title"><%= @taxon.name %></h1>
+    <% if @taxon.icon.attached? %>
+      <%= image_tag @taxon.icon.url(:original), class: "taxon-icon" %>
+    <% end %>
+    <%= raw(@taxon.description.presence || t('spree.taxon_has_no_description')) %>
+
 
     <%= render 'products/products', products: @products, taxon: @taxon %>
 

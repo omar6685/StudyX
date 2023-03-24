@@ -104,3 +104,5 @@ group :development, :test do
   gem "rubocop-rspec", "~> 2.0"
 end
 gem 'ckeditor'
+gem "mini_magick"
+gem 'carrierwave'
