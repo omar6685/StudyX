@@ -48,6 +48,7 @@ Rails.application.routes.draw do
   get '/checkout', to: 'checkouts#edit', as: :checkout
 
   get '/orders/:id/token/:token' => 'orders#show', as: :token_order
+  get '/search_by_taxon', to: 'products#search_by_taxon'
 
   resources :orders, only: :show do
     resources :coupon_codes, only: :create

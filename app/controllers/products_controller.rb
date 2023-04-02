@@ -27,7 +27,11 @@ class ProductsController < StoreController
     @product_properties = @product.product_properties.includes(:property)
     @taxon = Spree::Taxon.find(params[:taxon_id]) if params[:taxon_id]
   end
-
+  
+  def search_by_taxon
+    @taxons = Spree::Taxon.where(id: params[:taxon_ids])
+    @products = Spree::Product.joins(:taxons).where(spree_taxons: { id: @taxons }).group('spree_products.id').having('COUNT(DISTINCT spree_taxons.id) = ?', @taxons.count)
+  end
   private
 
   def accurate_title

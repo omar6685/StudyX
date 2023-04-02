@@ -81,8 +81,8 @@ en:
       spree/property:
         one: Property Type
       spree/product_property:
-        one: Product Property
-        other: Product Properties
+        one: department Property
+        other: department Properties
       spree/payment_method:
         one: Payment Method 
       spree/state:
@@ -90,7 +90,7 @@ en:
       spree/shipment:
         other: Shipments 
       spree/product:
-        other: Products
+        other: departments
       spree/taxon:
         other: Taxons
       spree/order:
@@ -124,7 +124,7 @@ en:
         orders: Orders  
         overview: Overview
         payments: Payments
-        products: Products
+        products: departments
         promotion_categories: Promotion Categories
         promotions: Promotions
         properties: Property Types
@@ -141,8 +141,8 @@ en:
         zones: Zones
 
     taxon_placeholder: Add a Taxon
-    new_product: New Product
-    product_details: Product Details
+    new_product: New department
+    product_details: department Details
     date_range: Date Range  
     new_order: New Order  
     name_contains: Name Contains   
@@ -208,7 +208,7 @@ en:
     order_completed: Order completed 
     show_deleted: Show Deleted
     search: Search
-    add_product_properties: Add Product Properties
+    add_product_properties: Add department Properties
     name: Name
     new_property: New Property Type
     new_taxonomy: New Taxonomy
