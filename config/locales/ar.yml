@@ -1,0 +1,115 @@
+ar:
+  spree:
+    locale_changed: "تم تغيير اللغة إلى "
+    locale_not_changed: "لم يتم تغيير اللغة"
+    i18n:
+      this_file_language: " (العربية)"
+      language: "اللغة"
+    abbreviation: اختصار
+    accept: قبول
+    acceptance_errors: أخطاء القبول
+    acceptance_status: حالة القبول
+    accepted: مقبول
+    account: حساب
+    account_updated: تم تحديث الحساب
+    action: إجراء
+    actions:
+      add: إضافة
+      cancel: إلغاء
+      continue: استمرار
+      create: إنشاء
+      delete: حذف
+      destroy: تدمير
+      edit: تحرير
+      list: قائمة
+      listing: قائمة
+      new: جديد
+      receive: استلام
+      refund: استرداد
+      remove: إزالة
+      save: حفظ
+      send_email: إرسال بريد إلكتروني
+      ship: شحن
+      split: تقسيم
+      update: تحديث
+    activate: تفعيل
+    active: نشط
+    add: إضافة
+    add_action_of_type: إضافة إجراء من النوع
+    add_country: إضافة دولة
+    add_coupon_code: إضافة كود الكوبون
+    add_line_item: إضافة عنصر
+    add_new_header: إضافة رأس جديد
+    add_new_style: إضافة نمط جديد
+    add_one: إضافة واحد
+    add_option_value: إضافة قيمة الخيار
+    add_product: إضافة منتج
+    add_product_properties: إضافة خصائص المنتج
+    add_rule_of_type: إضافة قاعدة من النوع
+    add_state: إضافة حالة
+    add_stock: إضافة مخزون
+    add_stock_management: إضافة إدارة المخزون
+    add_taxon: إضافة تصنيف ضريبي
+    add_to_cart: إضافة إلى السلة
+    add_to_stock_location: حدد الموقع لنشر المخزون
+    add_variant: إضافة تباين
+    add_variant_properties: إضافة خصائص التباين
+    added: تمت الإضافة
+  abbreviation: الاختصار
+  accept: قبول
+  acceptance_errors: أخطاء القبول
+  acceptance_status: حالة القبول
+  accepted: مقبول
+  account: الحساب
+  account_updated: تم تحديث الحساب
+  action: الإجراء
+  actions:
+    add: إضافة
+    cancel: إلغاء
+    continue: استمرار
+    create: إنشاء
+    delete: حذف
+    destroy: تدمير
+    edit: تعديل
+    list: قائمة
+    listing: القوائم
+    new: جديد
+    receive: استلام
+    refund: استرداد
+    remove: إزالة
+    save: حفظ
+    send_email: إرسال البريد الإلكتروني
+    ship: الشحن
+    split: تقسيم
+    update: تحديث
+  activate: تفعيل
+  active: نشط
+  add: إضافة
+  add_action_of_type: إضافة إجراء من النوع
+  add_country: إضافة دولة
+  add_coupon_code: إضافة رمز القسيمة
+  add_line_item: إضافة عنصر
+  add_new_header: إضافة عنوان جديد
+  add_new_style: إضافة نمط جديد
+  add_one: إضافة واحد
+  add_option_value: إضافة قيمة الخيار
+  add_product: إضافة منتج
+  add_product_properties: إضافة خصائص المنتج
+  add_rule_of_type: إضافة قاعدة من النوع
+  add_state: إضافة حالة
+  add_stock: إضافة مخزون
+  add_stock_management: إضافة إدارة المخزون
+  add_taxon: إضافة فئة ضريبية
+  add_to_cart: إضافة إلى السلة
+  add_to_stock_location: اختيار الموقع لنشر المخزون
+  add_variant: إضافة البديل
+  add_variant_properties: إضافة خصائص البديل
+  added: تمت الإضافة
+  adding_match: إضافة تطابق
+  additional_item: عنصر إضافي
+  address1: العنوان 1
+  address2: العنوان 2 (المتابعة)
+  adjustable: قابل للتعديل
+  adjustment: التعديل
+  adjustment_amount: المبلغ
+  
