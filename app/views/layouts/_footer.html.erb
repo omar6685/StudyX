@@ -1,27 +1,39 @@
-<footer class="footer">
-  <p>
-    <%= t 'spree.powered_by' %> <%= link_to 'Solidus', 'http://solidus.io/' %>
-  </p>
+<footer class="border">
 
-  <%
-    available_locales = current_store.available_locales.map do |locale|
-      [
-        I18n.t('spree.i18n.this_file_language',
-        locale: locale,
-        default: locale.to_s,
-        fallback: false), locale
-      ]
-    end.sort
-  %>
+        <div class="container semi-transparent-footer m-auto border-2">
 
-  <% if available_locales.many? %>
-    <div class="locale-selector">
-      <%= form_tag select_locale_path do %>
-        <div class="locale-selector__select-input select-input">
-          <%= label_tag :switch_to_locale, "#{t('spree.i18n.language')}:" %>
-          <%= select_tag(:switch_to_locale, options_for_select(available_locales, I18n.locale)) %>
+            <div class="sec About flex">
+                <div class="imges">
+                    <img <%= image_tag('logo-2.jpg')%>
+                </div>
+                <div class="m-auto m-auto00 ">
+                    <p>We provide high-quality services and comprehensive information to facilitate the registration process and enhance your experience as a student in Turkey. Thank you for choosing us.</p>
+                </div>
+            </div>
+            <div class="sec Contact flex">
+                <ul class="info m-auto m-auto00">
+                    <li class="mb-0 ">
+                        <span><ion-icon name="call-outline"></ion-icon></span>
+                        <p><a href="tel:00905518479488">+90 551 847 94 88</a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <span><ion-icon name="mail-outline"></ion-icon> </span>
+                        <p>
+                            <a href="mailto:info@studyx-edu.com">info@studyx-edu.com</a>
+                        </p>
+                    </li>
+                </ul>
+
+                <ul class="sci ml-20">
+                    <li class="m-auto"><a target="_blank" href="https://www.facebook.com/studyx.edu.tr?mibextid=LQQJ4d"><ion-icon class="fa" name="logo-facebook"></ion-icon></a></li>
+                    <li class="m-auto fa-mobil-2"><a target="_blank" href="https://wa.me/+905518479488" ><ion-icon class="fa" name="logo-whatsapp"></ion-icon></a></li>
+                    <li class="m-auto fa-mobil"><a target="_blank" href="https://instagram.com/studyx.edu.tr?igshid=YmMyMTA2M2Y="><ion-icon class="fa" name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
         </div>
-      <% end %>
-    </div>
-  <% end %>
+        <div class="copytext">
+            <p>© 2023 StudyX.</p>
+        </div>
 </footer>
