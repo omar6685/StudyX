@@ -631,7 +631,7 @@ header nav .form {
 
     min-height: 100vh;
     background-color: slateblue;
-    background-image: url("./imges/ShowCaseImage.jpg");
+    background-image: url("./images/ShowCaseImage.jpg");
     background-size: 100% 100%;
     position: relative;
 }
@@ -1991,7 +1991,7 @@ footer .container .sec p {
     .landing  { 
         min-height: 100vh;
         background-color: slateblue;
-        background-image: url(./imges/ShowCaseImage.jpg);
+        background-image: url(./images/ShowCaseImage.jpg);
         background-size: cover;
         position: relative;
     }

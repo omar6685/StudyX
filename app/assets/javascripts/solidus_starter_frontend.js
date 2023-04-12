@@ -13,3 +13,4 @@
 //= require cart
 //= require locale_selector
 //= require product_selection_component
+//= require about_us
