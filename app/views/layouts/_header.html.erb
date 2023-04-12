@@ -1,20 +1,31 @@
-<header class="header">
-  <div class="header__secondary-navigation">
-    <%= render 'layouts/top_bar', taxons: taxons, taxon: taxon %>
-  </div>
-  <div class="header__primary-navigation">
-    <div class="category-navigation">
-      <% categories = taxonomies.first %>
-
-      <nav class="categories">
-        <% cache [I18n.locale, categories, taxon] do %>
-          <%= render(TaxonsTreeComponent.new(
-            root_taxon: categories.root,
-            current_taxon: taxon,
-            max_level: 1,
-            base_class: 'categories')) if categories %>
-        <% end %>
-      </nav>
-    </div>
+<header>
+  <div class="container">
+    
+    <a class="logo" herf="#home">
+       <img <%= link_to image_tag('logo.png'), root_path %>>
+    </a>
+  
+    <nav>
+    
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li class="m-auto"><a class="with_color" href="index.html"><span> Home</span></a></li>
+                    <li class="m-auto"><a href="4pege.html"><span>Programs</span></a></li>
+                    <li class="m-auto"><a href="8pege.html"><span> Universities </span></a></li>
+                    <li class="m-auto"><a href="7pege.html"><span> Blog </span></a></li>
+                    <li class="m-auto"><a href="contuct_us.html"><span> Conect us </span></a></li>
+                    <li>
+                        
+	                    <div class="switch">
+	                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+	                        <label for="language-toggle"></label>
+	                        <span class="on">ar</span>
+	                        <span class="off">EN</span>
+  	                    </div>
+                    </li>
+                </ul>
+                <label for="language-select"></label>
+                <!-- Home -->
+    </nav>
   </div>
 </header>
