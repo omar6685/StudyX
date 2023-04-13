@@ -1,8 +1,436 @@
 <%= render 'hero' %>
 <%= render 'section-2' %>
 
-<article>
-  <% cache(cache_key_for_products) do %>
-    <%= render 'products/products', products: @products %>
-  <% end %>
-</article>
+    <section>
+
+        <div class="class-UN" id="jobs">
+            <div class="overley"></div>
+            <div class="h-un-title">
+                <div class="h-d-details">
+                    <a id="un-link" href="#">
+                        <div class="b-h active">الجامعات</div>
+                    </a>
+                    <a id="de-link" href="#">
+                        <div class="b-h">الكليات</div>
+                    </a>
+                    <a id="ts-link" href="#">
+                        <div class="b-h">التخصصات</div>
+                    </a>
+                    <a id="ar-link" href="#">
+                        <div class="b-h">المقالات</div>
+                    </a>
+                </div>
+            </div>
+            <div class="plr-30">
+                 <%= render 'home/universities', taxons: @taxons, taxon: @taxon %>
+
+                <div class=" container semi-transparent-un" id="de" style="display:none">
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" container semi-transparent-un" id="ts" style="display:none">
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="a-edit hover" href="#">
+                        <div class="inherit">
+                            <div class="box-d-1">
+                                <div class="uni-title">
+                                    <span>جامعة أنقرة - </span>
+                                    <span>هندسة ميكانيكية</span>
+                                </div>
+                            </div>
+                            <div class="box-d-2"></div>
+                            <div class=""><img class="image-d" src="imges/uni.jpg" alt=""></div>
+                            <div class="box-d-3">
+                                <div class="flex d-details radu">
+                                    <div class="semi radu px-5 black">5/أعوام</div>
+                                    <div class="semi radu px-5 black">إنجليزي</div>
+                                    <div class="semi radu px-5 black">3000$</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="ar" style="display:none">
+                    <%= render 'home/articles', taxons: @taxons, taxon: @taxon %>
+
+                </div>
+            </div>
+            <a href="4pege.html">
+                <button class="btn-bigger btn-bigger2 foewerd semi-transparent">View all</button></a>
+        </div>
+        <div class="whatsapp-icon">
+            <a class="whatsapp" target="_blank" href="https://wa.me/+905518479488"><ion-icon name="logo-whatsapp"></ion-icon></a>
+
+            <a class="arrow_up" href="#Home"><ion-icon name="arrow-up-outline"></ion-icon></a>
+        </div>
+    </section>

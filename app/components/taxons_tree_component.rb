@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class TaxonsTreeComponent < ViewComponent::Base
   attr_reader :root_taxon, :title, :current_taxon, :max_level, :base_class
 
@@ -32,19 +30,33 @@ class TaxonsTreeComponent < ViewComponent::Base
   end
 
   def tree(root_taxon:, base_class:, max_level:)
-    return if max_level < 1 || root_taxon.children.empty?
-
-    content_tag :ul, class: base_class do
+    return  if max_level < 1 || root_taxon.children.empty?
+  
+    content_tag :div, class: "container semi-transparent-un reveal", id: 'un' do
       taxons = root_taxon.children.map do |taxon|
         css_class = 'current' if current_taxon&.self_and_ancestors&.include?(taxon)
-
-        content_tag :li, class: css_class do
-          link_to(taxon.name, helpers.taxon_seo_url(taxon)) +
-            tree(root_taxon: taxon, base_class: nil, max_level: max_level - 1)
+  
+        content_tag :div, class: 'a-edit hover' do
+          link_to(helpers.taxon_seo_url(taxon), class: '') do
+            content_tag(:div, class: 'inherit') do
+              content_tag(:div, class: 'box-d-3-un') do
+              end +
+              content_tag(:div, class: 'box-d-2-un grid') do
+                content_tag(:span, taxon.name, class: 'text-un-1') +
+                content_tag(:span, 'read more', class: 'text-un-2')
+              end +
+              (taxon.icon.attached? ? content_tag(:div, class: '') do
+                image_tag(taxon.icon.url, class: 'image-d-un', alt: '')
+              end : '')
+            end
+          end +
+          tree(root_taxon: taxon, base_class: nil, max_level: max_level - 1)
         end
       end
-
+  
       safe_join(taxons, "\n")
     end
   end
+  
+  
 end

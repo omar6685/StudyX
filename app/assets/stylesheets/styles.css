@@ -837,7 +837,7 @@ header nav .form {
 
 .class-UN {
     position: relative;
-    background-image: url(imges/un-background.jpg);
+    background-image: url(./images/un-background.jpg);
     background-size: 100% 100%;
     padding-top: 50px;
     padding-bottom: 45px;
@@ -1979,7 +1979,7 @@ footer .container .sec p {
     
     .class-UN  { 
     position: relative;
-    background-image: url(imges/un-background.jpg);
+    background-image: url(./images/un-background.jpg);
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 45px;
