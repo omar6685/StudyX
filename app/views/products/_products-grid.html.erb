@@ -1,5 +1,5 @@
 <%
-  base_class = "products-grid".freeze
+  base_class = "container semi-transparent-un".freeze
 
   # Optional props
   classes = local_assigns.fetch(:classes, [])
@@ -8,8 +8,8 @@
   class_names = classes.push(base_class).join(" ")
 %>
 
-<ul class="<%= class_names %>">
+<div class="<%= class_names %>">
   <% products.each do |product| %>
     <%= render 'products/product-card', product: product %>
   <% end %>
-</ul>
+</div>
