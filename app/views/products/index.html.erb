@@ -1,22 +1,63 @@
-<div class="products">
-  <aside>
-    <% if "products" == params[:controller] && @taxon %>
-      <%= render 'shared/search/filters', taxon: @taxon %>
-    <% else %>
-      <%= render 'shared/navigation/taxonomies', taxon: @taxon %>
-    <% end %>
-  </aside>
-  <section class="products_section">
-    <% if params[:keywords] %>
-      <% if @products.empty? %>
-        <h6>
-          <%= t('spree.no_products_found') %>
-        </h6>
-      <% else %>
-        <%= render 'products', products: @products, taxon: @taxon %>
-      <% end %>
-    <% else %>
-      <%= render 'products', products: @products, taxon: @taxon %>
-    <% end %>
-  </section>
-</div>
+<section class="pt-118" id="Programs">
+
+  <div class="class-pa" id="jobs">
+    <div>
+      <div class="semi-transparent-un borders-pa">
+
+          
+        <div class="semi-transparent-pa text-h">
+                        <h1 class="pl-20">read more</h1>
+        </div>
+        <div class="semi-transparent-un-1 ">
+                        <div class="content">
+                            <div class="filter-wrapper-sc">
+
+                                <div class="filter-group">
+                                    <select id="filter1" class="filter-select">
+                                        <option value="">All</option>
+                                        <option class="fa" value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-group">
+                                    <select id="filter2" class="filter-select">
+                                        <option value="">All</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                    </select>
+                                </div>
+
+                                <div class="">
+                                    <select id="filter3" class="filter-select">
+                                        <option value="">All</option>
+                                        <option value="option7">Option 7</option>
+                                        <option value="option8">Option 8</option>
+                                        <option value="option9">Option 9</option>
+                                    </select>
+                                </div>
+                                <form action="#" method="get">
+                                    <button type="submit">Ara</button>
+                                </form>
+                            </div>
+        </div>
+
+        <section class="semi-transparent-un-1">
+         <% if params[:keywords] %>
+           <% if @products.empty? %>
+             <h6>
+                <%= t('spree.no_products_found') %>
+              </h6>
+            <% else %>
+              <%= render 'products2', products: @products, taxon: @taxon %>
+            <% end %>
+          <% else %>
+            <%= render 'products2', products: @products, taxon: @taxon %>
+         <% end %>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
