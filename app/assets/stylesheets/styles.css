@@ -2229,3 +2229,20 @@ footer .container .sec p {
   .mml-20 {
     margin-left: 20px;
   }
+  .lan-bo {
+    border-radius: 38px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+
+  }
+  .lan-bo:hover {
+    border-radius: 38px;
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+
+  }
+  .black:hover {
+    color: black;
+  }

@@ -1,4 +1,9 @@
 ar:
+  date:
+    month_names: [~, يناير, فبراير, مارس, أبريل, مايو, يونيو, يوليو, أغسطس, سبتمبر, أكتوبر, نوفمبر, ديسمبر]
+    abbr_month_names: [~, ينا, فبر, مار, أبر, ماي, يون, يول, أغس, سبت, أكت, نوف, ديس]
+    formats:
+      default: "%Y/%m/%d"
   spree:
     locale_changed: "تم تغيير اللغة إلى "
     locale_not_changed: "لم يتم تغيير اللغة"
@@ -55,61 +60,64 @@ ar:
     add_variant: إضافة تباين
     add_variant_properties: إضافة خصائص التباين
     added: تمت الإضافة
-  abbreviation: الاختصار
-  accept: قبول
-  acceptance_errors: أخطاء القبول
-  acceptance_status: حالة القبول
-  accepted: مقبول
-  account: الحساب
-  account_updated: تم تحديث الحساب
-  action: الإجراء
-  actions:
+    abbreviation: الاختصار
+    accept: قبول
+    acceptance_errors: أخطاء القبول
+    acceptance_status: حالة القبول
+    accepted: مقبول
+    account: الحساب
+    account_updated: تم تحديث الحساب
+    action: الإجراء
+    actions:
+      add: إضافة
+      cancel: إلغاء
+      continue: استمرار
+      create: إنشاء
+      delete: حذف
+      destroy: تدمير
+      edit: تعديل
+      list: قائمة
+      listing: القوائم
+      new: جديد
+      receive: استلام
+      refund: استرداد
+      remove: إزالة
+      save: حفظ
+      send_email: إرسال البريد الإلكتروني
+      ship: الشحن
+      split: تقسيم
+      update: تحديث
+    activate: تفعيل
+    active: نشط
     add: إضافة
-    cancel: إلغاء
-    continue: استمرار
-    create: إنشاء
-    delete: حذف
-    destroy: تدمير
-    edit: تعديل
-    list: قائمة
-    listing: القوائم
-    new: جديد
-    receive: استلام
-    refund: استرداد
-    remove: إزالة
-    save: حفظ
-    send_email: إرسال البريد الإلكتروني
-    ship: الشحن
-    split: تقسيم
-    update: تحديث
-  activate: تفعيل
-  active: نشط
-  add: إضافة
-  add_action_of_type: إضافة إجراء من النوع
-  add_country: إضافة دولة
-  add_coupon_code: إضافة رمز القسيمة
-  add_line_item: إضافة عنصر
-  add_new_header: إضافة عنوان جديد
-  add_new_style: إضافة نمط جديد
-  add_one: إضافة واحد
-  add_option_value: إضافة قيمة الخيار
-  add_product: إضافة منتج
-  add_product_properties: إضافة خصائص المنتج
-  add_rule_of_type: إضافة قاعدة من النوع
-  add_state: إضافة حالة
-  add_stock: إضافة مخزون
-  add_stock_management: إضافة إدارة المخزون
-  add_taxon: إضافة فئة ضريبية
-  add_to_cart: إضافة إلى السلة
-  add_to_stock_location: اختيار الموقع لنشر المخزون
-  add_variant: إضافة البديل
-  add_variant_properties: إضافة خصائص البديل
-  added: تمت الإضافة
-  adding_match: إضافة تطابق
-  additional_item: عنصر إضافي
-  address1: العنوان 1
-  address2: العنوان 2 (المتابعة)
-  adjustable: قابل للتعديل
-  adjustment: التعديل
-  adjustment_amount: المبلغ
-  
+    add_action_of_type: إضافة إجراء من النوع
+    add_country: إضافة دولة
+    add_coupon_code: إضافة رمز القسيمة
+    add_line_item: إضافة عنصر
+    add_new_header: إضافة عنوان جديد
+    add_new_style: إضافة نمط جديد
+    add_one: إضافة واحد
+    add_option_value: إضافة قيمة الخيار
+    add_product: إضافة منتج
+    add_product_properties: إضافة خصائص المنتج
+    add_rule_of_type: إضافة قاعدة من النوع
+    add_state: إضافة حالة
+    add_stock: إضافة مخزون
+    add_stock_management: إضافة إدارة المخزون
+    add_taxon: إضافة فئة ضريبية
+    add_to_cart: إضافة إلى السلة
+    add_to_stock_location: اختيار الموقع لنشر المخزون
+    add_variant: إضافة البديل
+    add_variant_properties: إضافة خصائص البديل
+    added: تمت الإضافة
+    adding_match: إضافة تطابق
+    additional_item: عنصر إضافي
+    address1: العنوان 1
+    address2: العنوان 2 (المتابعة)
+    adjustable: قابل للتعديل
+    adjustment: التعديل
+    adjustment_amount: المبلغ
+    footer_description: توفر لكم خدمات عالية الجودة ومعلومات شاملة لتسهيل عملية التسجيل وتعزيز تجربتكم في تركيا. شكرا لاختياركم لنا.
+
+
+
