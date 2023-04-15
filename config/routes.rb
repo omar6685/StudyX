@@ -38,6 +38,7 @@ Rails.application.routes.draw do
 
   get '/locale/set', to: 'locale#set'
   post '/locale/set', to: 'locale#set', as: :select_locale
+  get '/contact_us', to: 'home#contact_us', as: :contact_us
 
   resource :checkout_session, only: :new
   resource :checkout_guest_session, only: :create

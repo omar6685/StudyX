@@ -8,4 +8,7 @@ class HomeController < StoreController
     @searcher = build_searcher(params.merge(include_images: true))
     @products = @searcher.retrieve_products
   end
+  
+  def contact_us
+  end
 end
