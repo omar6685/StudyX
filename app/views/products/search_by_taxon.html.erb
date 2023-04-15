@@ -1,51 +1,21 @@
-<%= form_tag search_by_taxon_path, method: :get do %>
-  <% Spree::Taxonomy.includes(:taxons).each do |taxonomy| %>
-    <h3><%= taxonomy.name %></h3>
-    <% taxonomy.taxons.each do |taxon| %>
-      <% next if ['Categories', 'Solidus', 'Hoodie'].include?(taxon.name) %>
-      <%= check_box_tag 'taxon_ids[]', taxon.id %>
-      <%= taxon.name %><br>
-    <% end %>
-  <% end %>
+<section class="pt-118" id="Programs">
+  <div class="class-pa" id="jobs">
 
-  <%= submit_tag 'Search' %>
-<% end %>
+    <div>
+      <div class="semi-transparent-un borders-pa">
 
-<hr>
-<% Spree::Taxon.where(id: params[:taxon_ids]).each do |taxon| %>
-  <%= hidden_field_tag :taxon_ids, taxon.id %>
-<% end %>
-<% if params[:taxon_ids].present? %>
-  <p>Selected taxons:</p>
-  <ul>
-    <% Spree::Taxon.where(id: params[:taxon_ids]).each do |taxon| %>
-      <li><%= taxon.name %></li>
-    <% end %>
-  </ul>
-<% end %>
-<hr>
-<h1>Search Results</h1>
-
-<ul class="products">
-  <% @products.each do |product| %>
-    <li>
-      <%= link_to product.name, product_path(product) %>
-      <picture class="product-image">
-        <%= link_to render(ImageComponent.new(
-          image: product.gallery.images.first,
-          size: :small,
-          itemprop: "image",
-          data: { js: 'product-main-image' }
-        )),product_path(product)  %>
-      </picture>
-
-      <br>
-      <%= display_price(product) %>
-      <div class="horizontal-input-group__action">
-        <section class="product-card_buy">
-          <%= button_to 'Buy Now', cart_line_items_path(variant_id: product.master.id), method: :post, class: 'button-primary', id: 'add-to-cart-button' %>
-        </section>
+        <div class="semi-transparent-pa text-h">
+          <h1 class="pl-20">Search Results</h1>
+        </div>
+        <div class="semi-transparent-un-1 ">
+          <div class="content"> 
+            <%= render partial: 'products/search' %>
+            <% @products.each do |product| %>
+              <%= render 'products3', products: @products, taxon: @taxon %>
+            <% end %>
+          </div>
+        </div>
       </div>
-    </li>
-  <% end %>
-</ul>
+    </div>
+  </div>
+</section>

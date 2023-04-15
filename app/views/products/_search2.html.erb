@@ -1,0 +1,17 @@
+
+
+            <%= form_tag search_by_taxon_path, class: "filter-wrapper", method: :get do %>
+              <% Spree::Taxonomy.includes(:taxons).each do |taxonomy| %>
+                <% next if ['articles', 'universities'].include?(taxonomy.name.downcase) %>
+                <div class="filter-group">
+                  <select class="filter-select" name="taxon_ids[]">
+                    <option value=""><%= taxonomy.name %></option>
+                    <% taxonomy.taxons.each do |taxon| %>
+                      <% next if ['Faculties', 'Languages', 'Degree'].include?(taxon.name) %>
+                      <option value="<%= taxon.id %>"><%= taxon.name %></option>
+                    <% end %>
+                  </select>
+                </div>
+              <% end %>
+              <button class="mml-20" type="submit" value="Search">Search</button>
+            <% end %>

@@ -494,6 +494,7 @@ header nav ul {
     border-bottom: 1px solid rgba(135, 135, 135, 0.857);
     margin: 4px;
     margin-left: 18px;
+    max-width: 149px;
 }
 
 /* Item list styles */
@@ -1756,6 +1757,7 @@ footer .container .sec p {
     margin-bottom: 35px;
     width: fit-content;
     padding-left: 20px;
+    padding-right: 32px;
 }
 
 .w-pa {
@@ -2049,7 +2051,7 @@ footer .container .sec p {
     
     button[type="submit"]:hover {
         background-color: #448bc6;
-        width: 72px;
+        width: 152px;
         height: 36px;
         color: #fff;
     }
@@ -2058,7 +2060,7 @@ footer .container .sec p {
         background-color: #eff2ff;
         color: #000000;
         border: none;
-        width: 70px;
+        width: 150px;
         height: 36px;
         border-radius: 6px;
         cursor: pointer;
@@ -2223,4 +2225,7 @@ footer .container .sec p {
   .un-show {
     left: 26px;
     position: relative;
+  }
+  .mml-20 {
+    margin-left: 20px;
   }
