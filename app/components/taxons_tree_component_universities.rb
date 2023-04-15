@@ -34,7 +34,6 @@ class TaxonsTreeComponentUniversities < ViewComponent::Base
     
       content_tag :div, class: "container4 semi-transparent-un reveal", id: 'un' do
         taxons = root_taxon.children.map do |taxon|
-          css_class = 'current' if current_taxon&.self_and_ancestors&.include?(taxon)
     
           content_tag :div, class: 'a-edit hover' do
             link_to(helpers.taxon_seo_url(taxon), class: '') do

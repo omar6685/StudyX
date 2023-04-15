@@ -18,10 +18,15 @@
             <% if @products.present? %>
               <%= render 'products/products3', products: @products, taxon: @taxon %>
             <% end %>
-          <% end %>
-          <% unless params[:keywords].present? %>
-            <% cache [I18n.locale, @taxon] do %>
-                 <%= render 'home/universities2', taxons: @taxons, taxon: @taxon %>
+          <% else %>
+            <% unless params[:keywords].present? %>
+              <% cache [I18n.locale, @taxon] do %>
+                <% if @taxon.name == "Universities" %>
+                  <%= render 'home/universities2', collection: @taxon.children %>
+                <% else %>
+                  <%= render 'home/articles2', collection: @taxon.children %>
+                <% end %>
+              <% end %>
             <% end %>
           <% end %>
         </div>

@@ -1,7 +1,7 @@
   
-      <% categories = taxonomies.first %>
+      <% categories = taxonomies.second %>
         <% cache [I18n.locale, categories, @taxon.children] do %>
-          <%= render(TaxonsTreeComponentUniversities.new(
+          <%= render(TaxonsTreeComponentArticles2.new(
             root_taxon: categories.root,
             current_taxon: @taxon.children,
             max_level: 1,
