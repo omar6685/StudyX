@@ -1,0 +1,15 @@
+<%
+  base_class = "container4 semi-transparent-un reveal".freeze
+
+  # Optional props
+  classes = local_assigns.fetch(:classes, [])
+
+  # Classes
+  class_names = classes.push(base_class).join(" ")
+%>
+
+<div class="<%= class_names %>">
+  <% products.each do |product| %>
+    <%= render 'products/product-card3', product: product %>
+  <% end %>
+</div>

@@ -1,22 +1,40 @@
-<div class="products">
-  <aside>
-    <%= render 'shared/navigation/taxonomies', taxon: @taxon %>
-    <%= render 'shared/search/filters', taxon: @taxon if @taxon.children.empty? %>
-  </aside>
-  <section>
-    <h1 class="products__taxon-title"><%= @taxon.name %></h1>
-    <% if @taxon.icon.attached? %>
-      <%= image_tag @taxon.icon.url(:original), class: "taxon-icon" %>
-    <% end %>
-    <%= raw(@taxon.description.presence || t('spree.taxon_has_no_description')) %>
+
+    <section class="pt-118" id="Programs">
+
+        <div class="class-pa" id="jobs">
+            <div>
+                <div class="semi-transparent-un borders-pa">
+
+                    <div class="semi-transparent-pa text-h">
+                        <h1 class="pl-20"><%= @taxon.name %></h1>
+                    </div>
+                    <div class="semi-transparent-un ">
+                        <div class=" semi-transparent-un m-auto table" id="un">
+
+                            
+                          <% if @taxon.icon.attached? %>
+                            <%= image_tag @taxon.icon.url(:original), class: "ar-im" %>
+                          <% end %>
+
+                        </div>
+                        <div class="article my-40">
+                          <%= (@taxon.description.presence || t('spree.taxon_has_no_description')) %>
+                        </div>
+                      <% if @products.present? %>
 
 
-    <%= render 'products/products', products: @products, taxon: @taxon %>
+                        <%= render 'products/products3', products: @products, taxon: @taxon %>
 
-    <% unless params[:keywords].present? %>
-      <% cache [I18n.locale, @taxon] do %>
-        <%= render partial: 'products/products_by_taxon', collection: @taxon.children %>
-      <% end %>
-    <% end %>
-  </section>
-</div>
+                        <% unless params[:keywords].present? %>
+                          <% cache [I18n.locale, @taxon] do %>
+                            <%= render partial: 'products/products_by_taxon', collection: @taxon.children %>
+                          <% end %>
+                        <% end %>
+                      <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+

@@ -1816,7 +1816,8 @@ footer .container .sec p {
 }
 
 .ar-im {
-    width: 1050px;
+    max-width: 525px;
+    margin: auto;
     border-radius: inherit;
 }
 
@@ -2066,11 +2067,11 @@ footer .container .sec p {
         font-size: 17px;
     }
     .ar-im {
-        max-width: 1050px;
+        max-width: 525px;
+        margin: auto;
         width: 90%;
         border-radius: inherit;
         position: relative;
-        left: 5%;
         top: 36px;
     }
 }
@@ -2218,4 +2219,8 @@ footer .container .sec p {
   
   input.check-toggle-round-flat:checked + label:after {
     margin-left: 44px;
+  }
+  .un-show {
+    left: 26px;
+    position: relative;
   }

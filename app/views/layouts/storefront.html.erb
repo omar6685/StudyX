@@ -15,12 +15,11 @@
     <%= favicon_link_tag 'favicon.ico' %>
     <%= yield :head %>
   </head>
-  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-turbo="false">
+  <body class="<%= "bac-color" %>" id="<%= @body_id || 'default' %>" data-turbo="false">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <%= render 'layouts/header', taxons: @taxons, taxon: @taxon %>
     <%= flash_messages %>
-    <%= render BreadcrumbsComponent.new(@taxon) %>
     <main>
       <%= yield %>
     </main>
