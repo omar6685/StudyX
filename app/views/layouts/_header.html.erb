@@ -9,11 +9,11 @@
     
                 <i class="fa-solid fa-bars"></i>
                 <ul>
-                    <li class="m-auto"><a class="with_color" href="<%= root_path %>"><span> Home</span></a></li>
-                    <li class="m-auto"><a href="<%= products_path %>"><span>Programs</span></a></li>
-                    <li class="m-auto"><a href="<%= nested_taxons_path(id: 'categories') %>"><span> Universities </span></a></li>
-                    <li class="m-auto"><a href="<%= nested_taxons_path(id: 'articles') %>"><span> Blog </span></a></li>
-                    <li class="m-auto"><a href="<%= contact_us_path %>"><span> Conect us </span></a></li>
+                    <li class="m-auto"><a class="with_color" href="<%= root_path %>"><span><%=I18n.t('spree.home')%></span></a></li>
+                    <li class="m-auto"><a href="<%= products_path %>"><span><%=I18n.t('spree.programs')%></span></a></li>
+                    <li class="m-auto"><a href="<%= nested_taxons_path(id: 'categories') %>"><span> <%=I18n.t('spree.universities')%> </span></a></li>
+                    <li class="m-auto"><a href="<%= nested_taxons_path(id: 'articles') %>"><span> <%=I18n.t('spree.blog')%> </span></a></li>
+                    <li class="m-auto"><a href="<%= contact_us_path %>"><span> <%=I18n.t('spree.contact_us')%> </span></a></li>
                     <li><%= render partial: 'layouts/language' %></li>
                 </ul>
                 <label for="language-select"></label>

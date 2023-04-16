@@ -3,7 +3,7 @@
     <% [
       I18n.t('spree.i18n.this_file_language', locale: locale, default: locale.to_s, fallback: false),
       locale,
-    { class: "black" }
+    { class: "language-option-#{locale}" }
     ] %>
   <% end.sort %>
 

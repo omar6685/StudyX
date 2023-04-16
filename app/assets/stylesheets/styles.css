@@ -1309,7 +1309,7 @@ footer .container .sec p {
     width: fit-content;
     margin: auto;
     font-weight: normal;
-    font-size: 33px;
+    font-size: 25px;
     padding-left: 45px;
     padding-right: 45px;
     width: 70%;
@@ -1923,6 +1923,7 @@ footer .container .sec p {
         padding-bottom: 0;
         text-align: center;
         margin: 5px;
+        font-size: 18px;
     }
 }
 
@@ -1939,7 +1940,7 @@ footer .container .sec p {
         width: fit-content;
         margin: auto;
         font-weight: normal;
-        font-size: 33px;
+        font-size: 20px;
         padding-left: 0px;
         padding-right: 0px;
         width: 70%;
