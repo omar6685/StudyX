@@ -1447,9 +1447,12 @@ footer .container .sec p {
     .sec .ml-20 {
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 36px;
+        padding-right: 13px;
+        bottom: 28px;
+        position: relative;
+        right: 23px;
     }
 
     .border .sec {
