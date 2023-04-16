@@ -23,7 +23,9 @@
 <% if !no_products_found %>
   <%= render 'products/products-grid2', products: products %>
 <% end %>
-
+<br>
+<div class="m-auto m-96">
 <% if paginated_products.respond_to?(:total_pages) %>
   <%= paginate paginated_products %>
 <% end %>
+</div>

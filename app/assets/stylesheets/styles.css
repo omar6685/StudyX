@@ -1757,7 +1757,7 @@ footer .container .sec p {
     margin-bottom: 35px;
     width: fit-content;
     padding-left: 20px;
-    padding-right: 32px;
+    padding-right: 0px;
 }
 
 .w-pa {
@@ -2076,6 +2076,17 @@ footer .container .sec p {
         position: relative;
         top: 36px;
     }
+    .filter-wrapper-sc {
+        margin: auto;
+        position: relative;
+        background: rgba(238, 235, 233, 0.667);
+        display: flex;
+        border-radius: 30px;
+        margin-bottom: 35px;
+        width: fit-content;
+        padding-left: 20px;
+        padding-right: 32px;
+    }
 }
 .black {
     color: black;
@@ -2245,4 +2256,7 @@ footer .container .sec p {
   }
   .black:hover {
     color: black;
+  }
+  .m-96 {
+    margin-left: 96px;
   }
