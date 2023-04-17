@@ -21,8 +21,10 @@
           <% else %>
             <% unless params[:keywords].present? %>
               <% cache [I18n.locale, @taxon] do %>
-                <% if @taxon.name == "Universities" %>
+                <% if @taxon.name == "Universities" || @taxon.name == "الجامعات" %>
                   <%= render 'home/universities2', collection: @taxon.children %>
+                <% elsif @taxon.name == "Faculties" || @taxon.name == "الكليات" %>
+                  <%= render 'home/faculties2', collection: @taxon.children %>
                 <% else %>
                   <%= render 'home/articles2', collection: @taxon.children %>
                 <% end %>

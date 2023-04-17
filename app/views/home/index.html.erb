@@ -11,7 +11,7 @@
                         <div class="b-h active"><%=I18n.t('spree.universities')%></div>
                     </a>
                     <a id="de-link" href="#">
-                        <div class="b-h"><%=I18n.t('spree.facilities')%></div>
+                        <div class="b-h"><%=I18n.t('spree.faculties')%></div>
                     </a>
                     <a id="ts-link" href="#">
                         <div class="b-h"><%=I18n.t('spree.programs')%></div>
@@ -25,7 +25,7 @@
                  <%= render 'home/universities', taxons: @taxons, taxon: @taxon %>
 
                 <div id="de" style="display:none">
-                      <%= render 'products/products', products: @products %>
+                      <%= render 'home/faculties', taxons: @taxons, taxon: @taxon %>
                 </div>
                 <div id="ts" style="display:none">
                     <%= render 'products/products', products: @products %>

@@ -1,0 +1,10 @@
+  
+      <% categories = taxonomies.third %>
+        <% cache [I18n.locale, categories, taxon] do %>
+          <%= render(TaxonsTreeComponentFaculties.new(
+            root_taxon: categories.root,
+            current_taxon: taxon,
+            max_level: 1,
+            base_class: 'categories')) if categories 
+            %>
+        <% end %>    

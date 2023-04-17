@@ -2336,3 +2336,32 @@ footer .container .sec p {
 .cart-empty__action {
     margin-left: 100px;
 }
+
+.box-d-3-fa {
+    background: #448bc6;
+    top: 42px;
+    display: flex;
+    position: relative;
+    width: 88%;
+    height: 166px;
+    border-radius: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    z-index: 0;
+    font-size: 18px;
+}
+
+.box-d-2-fa {
+    bottom: 135px;
+    position: relative;
+    
+}
+
+.text-fa {
+    position: relative;
+    top: 48px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 18px;
+}
