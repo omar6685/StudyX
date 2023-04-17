@@ -1,16 +1,23 @@
-<article class="checkout">
-  <%= render "shared/error_messages", target: @order %>
-  <%= render "checkout_header" %>
-
-  <div class="checkout__main">
-    <section class="checkout__step">
-      <%= render "checkout_step", order: @order %>
-    </section>
-
-    <% if @order.state != "confirm" %>
-      <div class="checkout__summary">
-        <%= render "checkout_summary", order: @order %>
+<section class="pt-118" id="Programs">
+  <div id="cart-items" class="class-pa" id="jobs">
+    <div>
+      <div class="semi-transparent-un borders-pa">
+        <div class="semi-transparent-pa text-h">
+          <h1 class="pl-20"><%= t('spree.contact_us') %></h1>
+        </div>
+        <div class="semi-transparent-un-1 ">
+          <div class="content">
+            <article class="checkout">
+              <%= render "shared/error_messages", target: @order %>
+              <div class="checkout__main">
+                <section class="checkout__step">
+                  <%= render "checkout_step", order: @order %>
+                </section>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
-    <% end %>
+    </div>
   </div>
-</article>
+</section>

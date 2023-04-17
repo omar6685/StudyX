@@ -16,10 +16,6 @@
     <% end %>
   </fieldset>
 
-  <fieldset class="address-step__shipping" id="shipping">
-    <legend>
-      <%= t('spree.shipping_address') %>
-    </legend>
 
     <%= form.fields_for :ship_address do |ship_form| %>
       <%= label_tag 'order_use_billing', class: 'checkbox-input' do %>
@@ -43,16 +39,5 @@
       name: :commit
     ) %>
 
-    <% if spree_current_user %>
-      <%= label_tag 'save-user-address', class: 'checkbox-input' do %>
-        <%= check_box_tag(
-          :save_user_address,
-          1,
-          spree_current_user.respond_to?(:persist_order_address),
-          id: 'save-user-address'
-        ) %>
-        <%= I18n.t("spree.save_my_address") %>
-      <% end %>
-    <% end %>
   </div>
 </div>

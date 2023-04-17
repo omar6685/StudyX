@@ -543,7 +543,6 @@ form {
 
 input[type="text"] {
     padding: 10px;
-    background: transparent;
     border: 1px solid transparent;
     margin-right: 8px;
     border-top-left-radius: 17px;
@@ -2264,3 +2263,76 @@ footer .container .sec p {
   .m-96 {
     margin-left: 96px;
   }
+  .image-d-order {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 90px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .cart-secondary-actions {
+    position: relative;
+    top: 30px;
+  }
+  .edit_order {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart-items {
+    margin: auto;
+  }
+  .button-primary {
+    margin: auto;
+  }
+  .input-ad {
+    border: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 75%;
+    margin: 10px;
+  }
+  .address-step {
+    width: 33%;
+    margin: auto;
+  }
+  @media screen and (min-width:300px) and (max-width:767px) {
+
+    .address-step {
+      width: 98%;
+      margin: auto;
+    }
+  }  
+  input[type="email"] {
+    padding: 10px;
+    border: 1px solid transparent;
+    margin-right: 8px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 20px;
+    border: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 55%;
+    margin: 10px;
+}
+.text-input {
+    margin: auto;
+}
+.address-step__actions {
+    margin: 10px;
+}
+.address-step__billing {
+    padding-left: 5px;
+}
+.order-page__title {
+    margin: 30px;
+}
+.order-page__completed {
+    margin: 30px;
+}
+.cart-empty__action {
+    margin-left: 100px;
+}

@@ -163,7 +163,6 @@ en:
     confirm: Confirm 
     order_information: Order Information 
     status: Status 
-    empty_cart: Empty Cart 
     order_state:
       canceled: Canceled
       cart: Cart  
@@ -241,5 +240,16 @@ en:
     articles: Articles
     facilities: Facilities
     view_all: View all
-
+    contact_us_title: Let's get in touch
+    contact_us_de: We are here to help and welcome your questions, comments, and feedback.
+             Please feel free to get in touch with us , 
+             and we will get back to you as soon as possible.
+             we look forward to hearing from you!
+    contact_us_2: "Contact Us :"
+    checkout: order
+    empty_cart: Cancel Order
+    email: "Email :"
+    billing_address: info
+    thank_you_for_your_order: Thank you for your order, we will contact you as soon as possible.
+    continue_shopping: Continue 
 

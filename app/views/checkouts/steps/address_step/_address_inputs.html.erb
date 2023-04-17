@@ -1,29 +1,29 @@
 <div class="address-inputs">
   <div class="text-input">
     <%= form.label :name, "#{I18n.t("spree.name")}:" %>
-    <%= form.text_field :name, required: true, autofocus: true, autocomplete: "#{address_type} given-name" %>
+    <%= form.text_field :name, required: true, class: "semi-transparent-un input-ad", autofocus: true, autocomplete: "#{address_type} given-name" %>
   </div>
 
   <% if Spree::Config[:company] %>
     <div class="text-input">
       <%= form.label :company, "#{I18n.t("spree.company")}:" %>
-      <%= form.text_field :company, autocomplete: "#{address_type} organization" %>
+      <%= form.text_field :company, class: "semi-transparent-un input-ad", autocomplete: "#{address_type} organization" %>
     </div>
   <% end %>
 
   <div class="text-input">
     <%= form.label :address1, "#{I18n.t("spree.street_address")}:" %>
-    <%= form.text_field :address1, required: true, autocomplete: "#{address_type} address-line1" %>
+    <%= form.text_field :address1, class: "semi-transparent-un input-ad", required: true, autocomplete: "#{address_type} address-line1" %>
   </div>
 
   <div class="text-input">
     <%= form.label :address2, "#{I18n.t("spree.street_address_2")}:" %>
-    <%= form.text_field :address2, autocomplete: "#{address_type} address-line2" %>
+    <%= form.text_field :address2, class: "semi-transparent-un input-ad", autocomplete: "#{address_type} address-line2" %>
   </div>
 
   <div class="text-input">
     <%= form.label :city, "#{I18n.t("spree.city")}:" %>
-    <%= form.text_field :city, required: true, autocomplete: "#{address_type} address-level2" %>
+    <%= form.text_field :city, class: "semi-transparent-un input-ad", required: true, autocomplete: "#{address_type} address-level2" %>
   </div>
 
   <div class="select-input">
@@ -85,7 +85,7 @@
 
     <%= form.text_field :zipcode,
       required: address.require_zipcode?,
-      autocomplete: "#{address_type} postal-code"
+      autocomplete: "#{address_type} postal-code", class: "semi-transparent-un input-ad"
     %>
   </div>
 

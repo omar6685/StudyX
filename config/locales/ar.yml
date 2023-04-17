@@ -130,7 +130,30 @@ ar:
     articles: المقالات
     facilities: الكليات
     view_all: المزيد
-
+    contact_us_title: "لنتواصل معاً"
+    contact_us_de: "نحن هنا للمساعدة ونرحب بأسئلتكم، تعليقاتكم وملاحظاتكم.
+                 لا تتردد في التواصل معنا من خلال نموذج الاتصال، 
+                 وسنعود إليكم في أقرب وقت ممكن.
+                 نتطلع إلى الاستماع منكم!"
+    contact_us_2: "اتصل بنا:"
+    checkout: طلب
+    empty_cart: إلغاء الطلب
+    email: "البريد :"
+    name: الإسم
+    street_address: العنوان
+    street_address_2: العنوان الثاني
+    city: المدينة
+    country: الدولة
+    state: المنطقة
+    zip: الرمز البريدي
+    save_and_continue: الحفظ والمتابعة
+    phone: رقم الجوال (بالمفتاح الدولي)
+    billing_address: معلومات الطلب
+    order_number: رقم الطلب %{number}
+    thank_you_for_your_order: شكرا لتعاملك معنا, سنتواصل معك في اقرب وقت ممكن.
+    continue_shopping: استمر
+    order_processed_successfully: تم تقديم طلبك بنجاح
+ 
 
 
 
