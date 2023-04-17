@@ -55,7 +55,7 @@ ar:
     add_stock: إضافة مخزون
     add_stock_management: إضافة إدارة المخزون
     add_taxon: إضافة تصنيف ضريبي
-    add_to_cart: إضافة إلى السلة
+    add_to_cart: اطلب الأن 
     add_to_stock_location: حدد الموقع لنشر المخزون
     add_variant: إضافة تباين
     add_variant_properties: إضافة خصائص التباين
@@ -105,7 +105,6 @@ ar:
     add_stock: إضافة مخزون
     add_stock_management: إضافة إدارة المخزون
     add_taxon: إضافة فئة ضريبية
-    add_to_cart: إضافة إلى السلة
     add_to_stock_location: اختيار الموقع لنشر المخزون
     add_variant: إضافة البديل
     add_variant_properties: إضافة خصائص البديل

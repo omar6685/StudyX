@@ -1,24 +1,37 @@
-<header class="product-header">
-  <h1 class="product-header__title" itemprop="name">
-    <%= product.name %>
-  </h1>
 
-  <% if product.price_for_options(current_pricing_options)&.money and !product.price.nil? %>
-    <h2 class="product-header__title" id="product-price">
-      <%= content_tag(
-        :span,
-        display_price(product),
-        itemprop: 'price',
-        content: product.price_for_options(current_pricing_options)&.money.to_d,
-        data: { js: 'price' }
-      ) %>
-
-      <%= content_tag(
-        :span,
-        nil,
-        itemprop: 'priceCurrency',
-        content: current_pricing_options.currency
-      ) %>
-    </h2>
-  <% end %>
-</header>
+<section class="pt-118" id="Programs">
+  <div id="cart-items" class="class-pa" id="jobs">
+    <div class="semi-transparent-un borders-pa">
+      <div class="semi-transparent-pa text-h">
+        <h1 class="pl-20"><%= t('spree.contact_us') %></h1>
+      </div>
+      <div class="container4 semi-transparent-un-1 ">
+        <div class="content">
+        
+<% cache [I18n.locale, current_pricing_options, @product] do |product| %>
+  <a class="<%= "a-edit hover" %>"  itemscope itemtype="http://schema.org/Product"%>
+    <div class="inherit">
+      <div class="box-d-1">
+        <div class="uni-title" itemprop="name">
+          <span><%= @product.name %></span>
+        </div>
+      </div>      
+      <div class="box-d-2"></div>
+      <div class="">
+        <%= render(ImageComponent.new(image: @product.gallery.images.first, size: :small, itemprop: "image"))%>
+      </div>
+      <div class="box-d-3">
+        <div class="flex d-details radu">
+          <div class="semi radu px-5 black"><%= @product.property("duration") %></div>
+          <div class="semi radu px-5 black"><%= @product.property("language") %></div>
+          <div class="semi radu px-5 black"><%= @product.price_for_options(current_pricing_options).display_price.to_s %></div>
+        </div>
+      </div>
+    </div>
+  </a>
+<% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

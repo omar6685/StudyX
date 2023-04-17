@@ -4,7 +4,7 @@
   <div class="horizontal-input-group">
     <div class="horizontal-input-group__input">
       <div class="text-input">
-        <%= text_field_tag :quantity, 1, type: :number, min: 1 %>
+      <%= text_field_tag :quantity, 1, type: :number, min: 1, style: 'display: none' %>
       </div>
     </div>
     <div class="horizontal-input-group__action">
@@ -14,9 +14,8 @@
         id: 'add-to-cart-button'
       ) %>
     </div>
-    <button id="buy-now-button" class="button-secondary">
-      <%= t('spree.buy_now') %>
-    </button>
+    <br>
+    <br>
   </div>
 </div>
 <script>
