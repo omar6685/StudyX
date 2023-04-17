@@ -1,31 +1,26 @@
 <section class="pt-118" id="Programs">
-
   <div id="cart-items" class="class-pa" id="jobs">
-    <div>
-      <div class="semi-transparent-un borders-pa">
-
-          
-        <div class="semi-transparent-pa text-h">
-                        <h1 class="pl-20"><%= t('spree.contact_us') %></h1>
-        </div>
-        <div class="semi-transparent-un-1 ">
-          <div class="content">
+    <div class="semi-transparent-un borders-pa">
+      <div class="semi-transparent-pa text-h">
+        <h1 class="pl-20"><%= t('spree.contact_us') %></h1>
+      </div>
+      <div class="semi-transparent-un-1 ">
+        <div class="content">
           <% @body_id = 'cart' %>
-
-<article class="cart-page">
-  <% if @order.line_items.empty? %>
-    <%= render 'carts/cart_empty' %>
-  <% else %>
-    <%= form_for @order, url: cart_path, html: {id: 'update-cart'} do |order_form| %>
-      <% order = order_form.object %>
-      <%= render 'shared/error_messages', target: order %>
-      <%= render 'carts/cart_items', order_form: order_form %>
-      <%= render 'carts/cart_footer', order_form: order_form %>
-    <% end %>
-          <%= render 'carts/cart_secondary_actions' %>
-
-  <% end %>
-</article>
+          <article class="cart-page">
+            <% if @order.line_items.empty? %>
+              <%= render 'carts/cart_empty' %>
+            <% else %>
+              <%= form_for @order, url: cart_path, html: {id: 'update-cart'} do |order_form| %>
+                <% order = order_form.object %>
+                <%= render 'shared/error_messages', target: order %>
+                <%= render 'carts/cart_items', order_form: order_form %>
+                <%= render 'carts/cart_footer', order_form: order_form %>
+              <% end %>
+              <%= render 'carts/cart_secondary_actions' %>
+            <% end %>
+          </article>
+        </div>
       </div>
     </div>
   </div>
