@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="<%= I18n.locale %>">
   <head data-hook="admin_inside_head">
+    <%= favicon_link_tag 'logo-2' %>
+
     <%= render 'spree/admin/shared/head' %>
+
       <%= javascript_include_tag '//cdn.ckeditor.com/4.7.3/full-all/ckeditor.js' %>
     </head>
   <body class="admin <%= "admin-nav-hidden" if cookies[:admin_nav_hidden] == "true" %>">
