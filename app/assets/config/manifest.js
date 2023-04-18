@@ -2,3 +2,4 @@
 //= link_tree ../builds
 //= link ckeditor/application.css
 //= link styles.css
+//= link styles.rtl.css

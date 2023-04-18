@@ -5,11 +5,14 @@
       <div class="semi-transparent-un borders-pa">
 
         <div class="semi-transparent-pa text-h">
-          <h1 class="pl-20">Search Results</h1>
+          <h1 class="pl-20"><%=I18n.t('spree.search_results')%></h1>
         </div>
         <div class="semi-transparent-un-1 ">
           <div class="content"> 
-            <%= render partial: 'products/search' %>
+            <div dir="ltr" class="content">
+                <%= render partial: 'products/search' %>
+            </div>
+          </div>
             <% @products.each do |product| %>
               <%= render 'products3', products: @products, taxon: @taxon %>
             <% end %>
