@@ -13,7 +13,7 @@
               <% end %>
             </div>
             <div class="article my-40">
-              <%= (@taxon.description.presence || t('spree.taxon_has_no_description')) %>
+                <%= raw (@taxon.description.presence || t('spree.taxon_has_no_description')) %>
             </div>
             <% if @products.present? %>
               <%= render 'products/products3', products: @products, taxon: @taxon %>
