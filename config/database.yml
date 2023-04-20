@@ -81,6 +81,6 @@ development:
 #
 production:
   <<: *default
-  database: dcgbvf1a92pi1n
-  username: mjdxxkllvxequj
-  password: 6c774008310454e5a3c8a93ce5462d2cd9aeb50bf862fa1dcc77ddf4b838c22f
+  database: studyx1_production
+  username: postgres
+  password: <%= ENV["STUDYX1_DATABASE_PASSWORD"] %>
