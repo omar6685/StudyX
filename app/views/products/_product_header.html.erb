@@ -16,7 +16,7 @@
           <span><%= @product.name %></span>
         </div>
       </div>      
-      <div class="box-d-2"></div>
+      <div class="box-d-2"><%= t('spree.add_to_cart') %></div>
       <div class="">
         <%= render(ImageComponent.new(image: @product.gallery.images.first, size: :small, itemprop: "image"))%>
       </div>
