@@ -1,0 +1,11 @@
+development: 
+  cloud_name: "djxyiifgf"
+  api_key: "671252635893836"
+  api_secret: "mWvLxrvzzd_uEbBRZ4wL-INrWlc"
+  secure: true
+
+production:
+  cloud_name: "djxyiifgf"
+  api_key: "671252635893836"
+  api_secret: "mWvLxrvzzd_uEbBRZ4wL-INrWlc"
+  secure: true

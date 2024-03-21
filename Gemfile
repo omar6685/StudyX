@@ -106,3 +106,4 @@ end
 gem 'ckeditor'
 gem "mini_magick"
 gem 'carrierwave'
+gem 'cloudinary'
